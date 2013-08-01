@@ -1,0 +1,5 @@
+<form action='/tweets' method='post'>
+  <input id='tweet_text' type='text' name='tweet[status]' placeholder='Tweet here!'>
+  <input type='hidden' name='tweet[user_id]' value="<%= session[:user_id] %>">
+  <input type='submit' value='tweet this'>
+</form>

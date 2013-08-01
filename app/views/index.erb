@@ -13,6 +13,11 @@
         <strong>the twitter token for the user is:</strong> <%= @access_token.token %><br>
         <strong>the twitter secret for the user is:</strong> <%= @access_token.secret %><br>
       </p>
+
+    <div id='tweet-form'>
+      <%= erb :_tweet %>
+    </div>
+
       <p>
         <button><a href="/sign_out">Sign Out</a></button>
       </p>
